@@ -1,0 +1,48 @@
+.video-card {
+    min-width: 33%;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    flex: 280px 1 1;
+    border-radius: .5rem;
+    background-color: hsla(258, 10%, 19%, 0.6)
+}
+
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; 
+
+}
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-card-information-list {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "location tweet"
+    "  text   text";
+    padding: 0;
+    list-style: none;
+
+}
+
+.video-location {
+    grid-area: location;
+    text-align: left;
+}
+
+.twitter-link {
+    grid-area: tweet;
+
+}
+
+.doucette-text {
+    grid-area: text;
+    padding-top: 0.4rem;
+}
